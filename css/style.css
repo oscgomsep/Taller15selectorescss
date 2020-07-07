@@ -1,0 +1,141 @@
+*{
+font-family: Arial, sans-serif;
+
+}
+header{
+    /* uso de flex en el header */
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    /* mejoramiento visual de los componentes */
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(218, 214, 214);
+    width: 100%;
+    
+}
+
+/* botones en el heater */
+.botonheater{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    width: 50px;
+    height: 20px;
+   }
+
+
+/* estilos en el cuerpo */
+main{
+    display: grid;
+    grid-row: 1fr 2fr 3fr 3fr;
+}
+/* area de la tarea del uso de las cascadas en css */
+#etiquetas{
+    grid-row-start: 1;
+    grid-row-end: 2;   
+    margin: 20px;
+}
+/* primer nivel */
+section {
+    font-size: small;
+    color: brown;
+
+}
+/* segundo nivel de profundidad */
+section div{
+    font-size: large;
+    color: blueviolet;
+}
+/* tercer nivel de profundidad */
+section div a{
+    font-size: large;
+    color: blueviolet;
+    background-color: cadetblue;
+}
+
+/* modificaciones de parrafos */
+#parrafos{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 20px;
+}
+
+#parrafos p:last-child{
+    color:red;
+    font-size: medium;
+}
+/* area de pseudo clases en listas */
+#listas{
+    grid-row-start: 3;
+    grid-row-end: 4;   
+    margin: 20px;
+}
+
+/* aplicacion de formato a una lista espeficia con pseudo clases*/
+
+ol.c{
+    list-style-type: upper-alpha;
+}
+/* seudo clase de color */
+ol.c:hover{
+    color: rgb(139, 0, 19);
+}
+ol.d{
+    list-style-type: lower-alpha;
+}
+
+ul.a{
+    list-style-type: circle;
+}
+/* aplicacion de seudo clases en una lista */
+ul li:first-child{
+    color: red;
+    font-weight: bold;
+}
+ul.b{
+    list-style-type: square;
+}
+
+/* area de aplicacion img */
+#usoimg{
+    grid-row-start: 4;
+    grid-row-end: 5; 
+    margin: 20px;
+    align-items: flex-start;
+}
+#images1{
+    display: flex;
+    flex-direction: row;  
+
+}
+
+#images1 img{
+    width: 250px;
+    padding: 15px 15px 50px 15px;
+    background-color: white;
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+}
+
+
+footer{
+    padding-left: 20px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(207, 203, 203);   
+ 
+}
+#f1{
+    margin-left: 5px;
+    grid-column-start: 1;
+    grid-column-end: 8;    
+}
